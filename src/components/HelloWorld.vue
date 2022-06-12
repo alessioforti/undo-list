@@ -11,7 +11,7 @@ const count = ref(0)
 <template>
   <h1>{{ msg }}</h1>
 
-  <p>
+  <p class="text-2xl">
     Recommended IDE setup:
     <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>
     +
@@ -32,9 +32,3 @@ const count = ref(0)
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
 </template>
-
-<style scoped>
-a {
-  color: #42b983;
-}
-</style>
