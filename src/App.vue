@@ -1,5 +1,6 @@
 <script setup>
 // import HelloWorld from './components/HelloWorld.vue'
+import ItemsTemplate from './components/ItemsTemplate.vue'
 
 import { ref } from "vue";
 
@@ -30,9 +31,7 @@ const addItem = () => {
   <div>
     <h1 class="text-3xl">My Undo List</h1>
     <!-- <HelloWorld msg="Hello Vue 3 + Vite" /> -->
-    <form
-      @submit.prevent="addItem"
-    >
+    <form @submit.prevent="addItem">
       <input 
         v-model="newItem"
         type="text" 
@@ -44,15 +43,8 @@ const addItem = () => {
         +
       </button>
     </form>
-    <ul>
-      <li 
-        v-for="(item, index) in items" 
-        :key="item.id" 
-        :class="{ 'line-through text-gray-400' : item.done }"
-        @click="markCompleted(item)"
-      >
-        {{ item.label }}
-      </li>
-    </ul>
+
+    <items-template :items="items" @done="markCompleted"></items-template>
+
   </div>
 </template>
