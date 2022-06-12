@@ -28,8 +28,8 @@ const addItem = (newItem) => {
 </script>
 
 <template>
-  <div>
-    <h1 class="text-3xl">My Undo List</h1>
+  <div class="w-5/6 md:w-1/2">
+    <h1 class="text-4xl text-center py-8">My Undo List</h1>
 
     <add-items-form @add-item="addItem"></add-items-form>
 
