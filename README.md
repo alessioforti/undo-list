@@ -1,7 +1,6 @@
-# Vue 3 + Vite
+# Undo List
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+**Everyone is doing to-do lists. Let's do an undo list with things worth stop doing!**
 
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+This is an example project to try out Vue 3 and Composition API.
+We have two components and data is passed up and down the components' tree.
